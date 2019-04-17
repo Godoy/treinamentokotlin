@@ -1,4 +1,4 @@
-package application.resources
+package application.common
 
 import application.domain.service.ProposalService
 import application.resources.repository.ProposalRepository
@@ -8,11 +8,4 @@ import org.koin.core.context.startKoin
 val proposalModule = module {
     single { ProposalService() }
     single { ProposalRepository() }
-}
-
-fun startProjectKoin() {
-    startKoin {
-        printLogger()
-        modules(proposalModule)
-    }
 }
