@@ -1,7 +1,7 @@
 package application.web
 
 import application.common.proposalModule
-import application.web.resource.ProposalResource
+import application.web.resource.ProposalController
 import io.javalin.Javalin
 import io.javalin.apibuilder.ApiBuilder.crud
 import io.javalin.apibuilder.ApiBuilder.get
@@ -21,7 +21,7 @@ object JavalinServer {
                 it.result("malandro ieie")
             }
 
-            crud("proposals/:proposal-id", ProposalResource())
+            crud("proposals/:proposal-id", ProposalController())
         }
     }
 }

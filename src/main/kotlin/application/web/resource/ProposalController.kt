@@ -7,7 +7,7 @@ import io.javalin.apibuilder.CrudHandler
 import org.koin.core.KoinComponent
 import org.koin.core.inject
 
-class ProposalResource: KoinComponent, CrudHandler { //TODO common interface to implement koin framework
+class ProposalController: KoinComponent, CrudHandler { //TODO common interface to implement koin framework
 
     private val proposalService by inject<ProposalService>()
 
