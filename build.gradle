@@ -8,6 +8,8 @@ plugins {
     id "org.jetbrains.kotlin.jvm" version "1.3.30"
 }
 
+apply plugin: 'application'
+
 repositories {
     mavenLocal()
     maven {
@@ -33,11 +35,11 @@ dependencies {
     compile 'org.koin:koin-core:2.0.0-rc-2'
     testCompile 'org.koin:koin-test:2.0.0-rc-2'
 }
-//mainClassName = "application.web.TreinamentoApp.kt"
-//sourceSets.main.java.srcDirs = ['src']
+mainClassName = "application.web.TreinamentoAppKt"
+
 group = 'groupId'
 version = '1.0-SNAPSHOT'
-//sourceCompatibility = '1.8'
+sourceCompatibility = '1.8'
 
 publishing {
     publications {
