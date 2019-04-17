@@ -1,0 +1,13 @@
+.gradle
+/build/
+.DS_Store
+application.properties
+logs/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
