@@ -6,7 +6,7 @@ import kotlinx.nosql.mongodb.MongoDB
 import org.koin.core.KoinComponent
 
 
-class ProposalRepository: KoinComponent {
+class ProposalRepository {
 
     //TODO configuracao do nome do bando deve estar em arquivo externo
     //TODO pendente de utilizar framework exposed

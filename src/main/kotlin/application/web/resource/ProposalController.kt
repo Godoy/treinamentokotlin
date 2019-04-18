@@ -4,12 +4,8 @@ import application.domain.Proposal
 import application.domain.service.ProposalService
 import io.javalin.Context
 import io.javalin.apibuilder.CrudHandler
-import org.koin.core.KoinComponent
-import org.koin.core.inject
 
-class ProposalController: KoinComponent, CrudHandler { //TODO common interface to implement koin framework
-
-    private val proposalService by inject<ProposalService>()
+class ProposalController(private val proposalService: ProposalService) : CrudHandler { //TODO common interface to implement koin framework
 
     override fun getAll(ctx: Context) {
         ctx.json(proposalService.getAll())
